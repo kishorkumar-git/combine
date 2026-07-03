@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to APEC College</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0056d6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:380px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+
+h1{
+    color:#0056d6;
+    font-size:28px;
+}
+
+h3{
+    color:#555;
+    margin-bottom:20px;
+    font-weight:normal;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#0056d6;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#003f9e;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Replace logo.png with your APEC College logo -->
+    <img src="logo.png" alt="APEC College Logo" class="logo">
+
+    <h1>Welcome</h1>
+    <h3>Welcome to APEC College</h3>
+
+    <form action="https://formspree.io/f/xnjkoylv" method="POST">
+
+        <input
+            type="text"
+            name="username"
+            placeholder="Enter Username"
+            required
+        >
+
+        <textarea
+            name="message"
+            placeholder="Enter your message"
+            rows="4"
+            required
+        ></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
